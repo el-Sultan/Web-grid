@@ -1,0 +1,166 @@
+:root {
+  /* =============== Google polices (Font) ================= */
+
+  /* =============== couleurs (colores) ================= */
+  --first-color: #f2a20c;
+  --white-color: #e9eaec;
+  --dark-color: #272d40;
+  --dark-color-lighten: #f2f5ff;
+
+  /* =============== source et typographie ================= */
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size:80px;
+  --h1-font-size-name: 160px;
+  --h2-font-size: 20px;
+  --normal-font-size: 16px;
+  --small-font-size: 14px;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤  Grid | N°col: 12 | Col: width 65px | entre deux col : 30px | padding : 15px | Max container : 1140px ~ vw ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ */
+
+.grid-options-12-1140 {
+  width: 1140px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid coral;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 15px;
+  /* box-sizing: border-box; */
+}
+.col {
+  width: 65px;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(252, 0, 0, 0.05);
+  margin: 0 15px;
+}
+
+.n-1 {
+  margin-left: 0;
+}
+.n-12 {
+  margin-right: 0;
+}
+
+/* ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤  Start BOX  ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ */
+
+.box01,
+.box02,
+.box03,
+.box04,
+.box05,
+.box06 {
+  width: clamp(320PX, 100%, 1140px);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 16px;
+  /* padding: 0 15px; */
+}
+/* ~~~~~~~~~~~~~~ Box01-r1-col1 ~~~~~~~~~~~~~~ */
+.box-r1-col1 {
+  width: clamp(320PX, 100vw, 1140px);
+  /* width: 100vw; */
+  height: 25vh;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.box-r1-col1 h1 {
+  font-size: clamp(42px, 10vw, 100px);
+  /* font-size: var(--h1-font-size); */
+}
+
+/* ~~~~~~~~~~~~~~ Box02-r2-col2 ~~~~~~~~~~~~~~ */
+
+.box-r2-col2 {
+  width: clamp(320PX, 100vw, 1140px);
+  /* width: 100vw; */
+  height: 25vh;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 361px;
+  margin-top: 16px;
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 225px; */
+  /* overflow: hidden; */
+}
+
+/* ~~~~~~~~~~~~~~ Box03-r3-col3 ~~~~~~~~~~~~~~ */
+.box-r3-col3 {
+  width: clamp(320PX, 100vw, 1140px);
+  /* width: 100vw; */
+  height: 25vh;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 235px;
+  margin-top: 16px;
+  /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 225px; */
+  /* overflow: hidden; */
+}
+
+.box-r3-col3 h2 {
+  font-size: clamp(20px, 5vw, 40px);
+}
+/* ~~~~~~~~~~~~~~ Box04-r4-col4 ~~~~~~~~~~~~~~ */
+.box-r4-col4 {
+  width: clamp(320PX, 100vw, 1140px);
+  /* width: 100vw; */
+  height: 25vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 172px;
+  margin-top: 16px;
+  /* flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 225px; */
+  /* overflow: hidden; */
+}
+
+/* ~~~~~~~~~~~~~~ Box05-r5-col5 ~~~~~~~~~~~~~~ */
+.box-r5-col5 {
+  width: clamp(320PX, 100vw, 1140px);
+  /* width: 100vw; */
+  height: 25vh;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 134px;
+  margin-top: 16px;
+  /* flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 225px; */
+  /* overflow: hidden; */
+}
+
+/* ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤  End BOX  ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ */
